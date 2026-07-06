@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <section class="calculator-section"> 
+         <div class="calculator">
+        <div class="result">
+        <button class="reset">C</button>
+            <p class="display">0</p>
+        </div>
+
+        <div class="buttons">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+            <button>+</button>
+        </div>
+    </div>
+    </section>
+    <section class="todo-section">
+        <div class="todo-list">
+            
+
+        <!-- Header -->
+        <header class="header">
+        <h1>To-Do List</h1>
+        </header>
+
+        <!-- Add Task -->
+        <section class="add-task">
+        <input
+            type="text"
+            class="task-input"
+            placeholder="Enter a new task..."
+        />
+        <button class="add-btn">Add</button>
+        </section>
+
+        <!-- Filters (Optional) -->
+        <section class="filters">
+        <button class="filter active">All</button>
+        <button class="filter">Active</button>
+        <button class="filter">Completed</button>
+        </section>
+
+        <!-- Task List -->
+        <section class="tasks">
+        <ul class="task-list">
+
+            <!-- One Task -->
+            <li class="task">
+            <input type="checkbox" class="task-check">
+
+            <span class="task-text">
+                Learn JavaScript
+            </span>
+
+            <button class="delete-btn">
+                Delete
+            </button>
+            </li>
+
+        </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+        <span class="tasks-left">3 tasks left</span>
+
+        <button class="clear-completed">
+            Clear Completed
+        </button>
+        </footer>
+
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

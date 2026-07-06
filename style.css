@@ -1,0 +1,229 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:20px;
+    background:#f4f4f4;
+}
+
+/* ==========================
+   Calculator
+========================== */
+
+.calculator{
+    width:320px;
+    background:#1f1f1f;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.result{
+    background:#2d2d2d;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+    position:relative;
+    
+}
+
+.display{
+    color:white;
+    font-size:2.5rem;
+    text-align:right;
+    word-wrap:break-word;
+    margin:12px;
+}
+
+.reset{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+    background:#ff4d4d;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+.buttons button{
+    height:60px;
+    border:none;
+    border-radius:12px;
+    font-size:1.2rem;
+    cursor:pointer;
+    background:#363636;
+    color:white;
+    transition:.2s;
+}
+
+.buttons button:hover{
+    background:#4d4d4d;
+}
+
+.equal{
+    background:#2e8bff !important;
+}
+
+.equal:hover{
+    background:#1976f3 !important;
+}
+
+/* ==========================
+   Todo List
+========================== */
+
+.todo-list{
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.header{
+    margin-bottom:25px;
+}
+
+.header h1{
+    text-align:center;
+    color:#333;
+}
+
+.add-task{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.task-input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:1rem;
+}
+
+.task-input:focus{
+    border-color:#2e8bff;
+}
+
+.add-btn{
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    background:#2e8bff;
+    color:white;
+    cursor:pointer;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.filter{
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    background:#ececec;
+    cursor:pointer;
+}
+
+.filter.active{
+    background:#2e8bff;
+    color:white;
+}
+
+.task-list{
+    list-style:none;
+}
+
+.task{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+
+    padding:14px;
+    margin-bottom:12px;
+
+    border-radius:12px;
+    background:#f6f6f6;
+}
+
+.task-text{
+    flex:1;
+    margin-left:10px;
+}
+
+.delete-btn{
+    border:none;
+    background:#ff4d4d;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.clear-completed{
+    border:none;
+    padding:10px 14px;
+    border-radius:8px;
+    background:#555;
+    color:white;
+    cursor:pointer;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:350px){
+
+    body{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .calculator,
+    .todo-list{
+        width:100%;
+        max-width:420px;
+    }
+
+}
